@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetinho</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        header {
+            background-color: darkgray;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        #carousel-in > .carousel-item {
+            width: 100%;
+            overflow:hidden ;
+        }
+
+        #comprar1 {
+            margin-top: 16px;
+            background-color: darkgrey;
+            border-radius: 16px;
+        }
+
+        #comprar1 h1 {
+            text-align: center;
+            margin: 32px;
+        }
+
+        .item {
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .item img {
+            width: 100%;
+        }
+
+        button {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Feliz Natal</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#imagens">Imagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#comprar">Comprar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+        <div id="imagens" class="container">
+            <div id="carousel-natal" class="carousel" data-bs-ride="carousel">
+                <div id="carousel-in" class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="Imagens/img1.jpg" alt="img1">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Imagens/img2.jpg" alt="img2">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Imagens/img3.jpg" alt="img3">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Imagens/img4.jpg" alt="img4">
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-natal" data-bs-slide="prev" type="button" class="carousel-control-prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+    
+                <button data-bs-target="#carousel-natal" data-bs-slide="next" type="button" class="carousel-control-next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div id="comprar1" class="row">
+                <div class="col-md-12">
+                    <h1>Exemplo de cards responsivas</h1>
+                    <div id="comprar">
+                        <div class="container">
+                                <div class="row">
+                                    <div class="item col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <div class="card-header">Item 1</div>
+                                            <div class="card-body">
+                                                <h3 class="card-title">Titulo</h3>
+                                                <h4 class="card-subtitle">Subtitulo</h4>
+                                                <img src="Imagens/img5.jpg" alt="">
+                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium beatae aliquid animi! Vero, harum voluptatum. Suscipit qui sapiente consequuntur facere esse rerum tenetur natus blanditiis impedit, doloribus non quia ullam.</p>
+                                                <button class="btn btn-success">Happy face</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <div class="card-header">Item 1</div>
+                                            <div class="card-body">
+                                                <h3 class="card-title">Titulo</h3>
+                                                <h4 class="card-subtitle">Subtitulo</h4>
+                                                <img src="Imagens/img5.jpg" alt="">
+                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium beatae aliquid animi! Vero, harum voluptatum. Suscipit qui sapiente consequuntur facere esse rerum tenetur natus blanditiis impedit, doloribus non quia ullam.</p>
+                                                <button class="btn btn-success">Happy face</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <div class="card-header">Item 1</div>
+                                            <div class="card-body">
+                                                <h3 class="card-title">Titulo</h3>
+                                                <h4 class="card-subtitle">Subtitulo</h4>
+                                                <img src="Imagens/img5.jpg" alt="">
+                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium beatae aliquid animi! Vero, harum voluptatum. Suscipit qui sapiente consequuntur facere esse rerum tenetur natus blanditiis impedit, doloribus non quia ullam.</p>
+                                                <button class="btn btn-success">Happy face</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <div class="card-header">Item 1</div>
+                                            <div class="card-body">
+                                                <h3 class="card-title">Titulo</h3>
+                                                <h4 class="card-subtitle">Subtitulo</h4>
+                                                <img src="Imagens/img5.jpg" alt="">
+                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium beatae aliquid animi! Vero, harum voluptatum. Suscipit qui sapiente consequuntur facere esse rerum tenetur natus blanditiis impedit, doloribus non quia ullam.</p>
+                                                <button class="btn btn-success">Happy face</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <div class="card-header">Item 1</div>
+                                            <div class="card-body">
+                                                <h3 class="card-title">Titulo</h3>
+                                                <h4 class="card-subtitle">Subtitulo</h4>
+                                                <img src="Imagens/img5.jpg" alt="">
+                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium beatae aliquid animi! Vero, harum voluptatum. Suscipit qui sapiente consequuntur facere esse rerum tenetur natus blanditiis impedit, doloribus non quia ullam.</p>
+                                                <button class="btn btn-success">Happy face</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <div class="card-header">Item 1</div>
+                                            <div class="card-body">
+                                                <h3 class="card-title">Titulo</h3>
+                                                <h4 class="card-subtitle">Subtitulo</h4>
+                                                <img src="Imagens/img5.jpg" alt="">
+                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium beatae aliquid animi! Vero, harum voluptatum. Suscipit qui sapiente consequuntur facere esse rerum tenetur natus blanditiis impedit, doloribus non quia ullam.</p>
+                                                <button class="btn btn-success">Happy face</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="indicacoes">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
